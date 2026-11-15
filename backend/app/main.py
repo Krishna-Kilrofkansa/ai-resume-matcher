@@ -1,7 +1,14 @@
 import os
+import sys
 import shutil
 import tempfile
 from typing import List, Optional
+
+# Ensure the backend directory is in sys.path regardless of execution working directory
+BACKEND_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if BACKEND_DIR not in sys.path:
+    sys.path.insert(0, BACKEND_DIR)
+
 from fastapi import FastAPI, UploadFile, File, Form, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
