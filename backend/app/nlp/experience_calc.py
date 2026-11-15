@@ -115,8 +115,20 @@ class ExperienceCalculator:
         relevant_intervals: List[Tuple[int, int]] = []
         extracted_roles: List[Dict[str, Any]] = []
 
+        DATASET_OR_EDU_EXCLUSIONS = [
+            "matches", "dataset", "records", "across", "data point", "season", "seasons",
+            "tournaments", "games", "studies", "sample", "samples", "historical", "backtested",
+            "trained on", "corpus", "articles", "images", "patients", "breakhis", "world cup",
+            "cgpa", "gpa", "expected", "institute of technology", "matriculation", "high school"
+        ]
+
         lines = text.split('\n')
         for i, line in enumerate(lines):
+            line_lower = line.lower()
+            # Guard against project dataset descriptions or academic timeline lines
+            if any(term in line_lower for term in DATASET_OR_EDU_EXCLUSIONS):
+                continue
+
             match = DATE_RANGE_REGEX.search(line)
             if match:
                 start_str = f"{match.group('start_month') or ''} {match.group('start_year')}".strip()
@@ -172,11 +184,16 @@ class ExperienceCalculator:
         generic_relevant_terms = [
             "engineer", "developer", "architect", "programmer", "software",
             "backend", "full stack", "fullstack", "frontend", "devops",
-            "data engineer", "systems", "cloud", "api", "database"
+            "data engineer", "systems", "cloud", "api", "database",
+            "intern", "internship", "fellow", "specialist", "consultant"
         ]
 
         # Check generic domain alignment
         if any(term in context_text for term in generic_relevant_terms):
+            return True
+
+        # Check acronyms with word boundary (sde, swe, ai, ml)
+        if re.search(r'\b(sde|swe|ai|ml)\b', context_text):
             return True
 
         # Check JD specific skills/keywords if provided

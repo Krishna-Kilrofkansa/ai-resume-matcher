@@ -88,8 +88,14 @@ class MatchingPipeline:
         )
 
         # 2. Experience Extraction & Scoring
+        # Prioritize the isolated work experience section if detected to avoid picking up dates
+        # from educational timelines or dataset metrics in project descriptions (e.g. "matches (2008-2026)")
+        exp_text = parsed["sections"].get("experience", "").strip()
+        if not exp_text or len(exp_text) < 30:
+            exp_text = full_text
+
         exp_data = self.exp_calc.extract_experience_from_text(
-            full_text,
+            exp_text,
             jd_keywords=jd_profile.get("skills", [])
         )
         exp_score_data = self.exp_calc.score_experience(
