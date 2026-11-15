@@ -49,6 +49,16 @@ export default function App() {
   const [selectedCandidate, setSelectedCandidate] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [minScoreFilter, setMinScoreFilter] = useState(0);
+  const [expandJDSkills, setExpandJDSkills] = useState(false);
+  const [expandedSkillsRows, setExpandedSkillsRows] = useState({});
+
+  const toggleRowSkills = (candRank, e) => {
+    e.stopPropagation();
+    setExpandedSkillsRows((prev) => ({
+      ...prev,
+      [candRank]: !prev[candRank]
+    }));
+  };
 
   // Extract JD Criteria (Module 1)
   const handleExtractJD = async () => {
@@ -246,17 +256,36 @@ export default function App() {
           {/* Extracted Criteria Preview */}
           {jdProfile && (
             <div style={{ marginTop: '14px', padding: '12px', background: '#f8fafc', borderRadius: '8px', border: '1px solid #e2e8f0' }}>
-              <div style={{ fontSize: '12px', fontWeight: '600', color: '#475569', marginBottom: '6px' }}>
-                Extracted Criteria:
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
+                <div style={{ fontSize: '12px', fontWeight: '600', color: '#475569' }}>
+                  Extracted Criteria ({jdProfile.skills.length} skills):
+                </div>
+                {jdProfile.skills.length > 10 && (
+                  <button
+                    type="button"
+                    style={{ background: 'transparent', border: 'none', color: '#2563eb', fontSize: '11px', cursor: 'pointer', fontWeight: '600' }}
+                    onClick={() => setExpandJDSkills(!expandJDSkills)}
+                  >
+                    {expandJDSkills ? 'Show less' : 'Expand all'}
+                  </button>
+                )}
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
-                {jdProfile.skills.slice(0, 10).map((s, idx) => (
+                {(expandJDSkills ? jdProfile.skills : jdProfile.skills.slice(0, 10)).map((s, idx) => (
                   <span key={idx} className="badge badge-gray">
                     {s}
                   </span>
                 ))}
-                {jdProfile.skills.length > 10 && (
-                  <span className="badge badge-gray">+{jdProfile.skills.length - 10} more</span>
+                {!expandJDSkills && jdProfile.skills.length > 10 && (
+                  <button
+                    type="button"
+                    onClick={() => setExpandJDSkills(true)}
+                    className="badge badge-blue"
+                    style={{ cursor: 'pointer', border: 'none', fontWeight: '600' }}
+                    title="Click to expand all extracted skills"
+                  >
+                    +{jdProfile.skills.length - 10} more
+                  </button>
                 )}
               </div>
             </div>
@@ -541,14 +570,22 @@ export default function App() {
                         </div>
                       </td>
                       <td>
-                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px' }}>
-                          {cand.matched_skills.slice(0, 3).map((s, idx) => (
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px', alignItems: 'center' }}>
+                          {(expandedSkillsRows[cand.rank] ? cand.matched_skills : cand.matched_skills.slice(0, 3)).map((s, idx) => (
                             <span key={idx} className="badge badge-green">
                               {s}
                             </span>
                           ))}
                           {cand.matched_skills.length > 3 && (
-                            <span className="badge badge-gray">+{cand.matched_skills.length - 3}</span>
+                            <button
+                              type="button"
+                              onClick={(e) => toggleRowSkills(cand.rank, e)}
+                              className="badge badge-gray"
+                              style={{ cursor: 'pointer', border: 'none', fontSize: '11px', fontWeight: '600' }}
+                              title={expandedSkillsRows[cand.rank] ? "Collapse skills" : "Click to view all matched skills"}
+                            >
+                              {expandedSkillsRows[cand.rank] ? "Show less" : `+${cand.matched_skills.length - 3} more`}
+                            </button>
                           )}
                         </div>
                       </td>
