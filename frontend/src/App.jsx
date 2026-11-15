@@ -304,9 +304,9 @@ export default function App() {
               style={{ fontSize: '12px', padding: '4px 10px' }}
               onClick={handleLoadSamples}
               disabled={loading}
-              title="Loads the 12 bundled synthetic test resumes directly from backend"
+              title="Loads 19 complete 1-3 page resumes downloaded from real-world open datasets"
             >
-              <Sparkles size={14} color="#2563eb" /> Load 12 Benchmark Resumes
+              <Sparkles size={14} color="#2563eb" /> Load 19 Real Multi-Page Resumes
             </button>
           </div>
 

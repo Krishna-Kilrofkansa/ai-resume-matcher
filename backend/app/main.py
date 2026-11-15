@@ -69,18 +69,22 @@ def extract_job_description(payload: JDExtractRequest):
 @app.post("/api/v1/resumes/load-samples")
 def load_sample_resumes(payload: JDExtractRequest):
     """
-    One-click benchmark loader: runs evaluation against the 12 bundled synthetic test resumes.
+    One-click loader: runs evaluation against the real multi-page resumes downloaded from open datasets.
     """
     if not payload.jd_text.strip():
         raise HTTPException(status_code=400, detail="Job description text cannot be empty.")
 
-    test_dir = os.path.join(os.path.dirname(__file__), "data", "test_resumes")
-    if not os.path.exists(test_dir):
+    # Prioritize the real-world online multi-page resumes directory
+    online_dir = os.path.join(os.path.dirname(__file__), "data", "online_resumes")
+    synthetic_dir = os.path.join(os.path.dirname(__file__), "data", "test_resumes")
+
+    target_dir = online_dir if (os.path.exists(online_dir) and len(os.listdir(online_dir)) > 0) else synthetic_dir
+    if not os.path.exists(target_dir):
         raise HTTPException(status_code=404, detail="Sample resumes directory not found.")
 
     sample_files = [
-        os.path.join(test_dir, f)
-        for f in os.listdir(test_dir)
+        os.path.join(target_dir, f)
+        for f in os.listdir(target_dir)
         if f.endswith(('.pdf', '.docx'))
     ]
 
