@@ -1,0 +1,21 @@
+Title: Senior Backend Engineer (Python / FastAPI)
+Company: CloudScale Technologies
+Location: Remote (US / Global)
+Experience Required: 4+ years of relevant backend software engineering experience
+Education: Bachelor's or Master's degree in Computer Science, Software Engineering, or related technical field
+
+About the Role:
+We are seeking an experienced Senior Backend Engineer to architect, build, and scale our high-throughput distributed microservices. You will lead API design, optimize database queries, implement asynchronous worker pipelines, and maintain CI/CD and cloud deployment infrastructure.
+
+Key Requirements:
+- 4+ years of professional backend software development experience.
+- Strong proficiency in Python 3 and modern async frameworks (FastAPI or Flask).
+- Deep experience with relational databases, specifically PostgreSQL, query optimization, and schema design.
+- Hands-on experience with containerization using Docker and orchestration with Kubernetes.
+- Practical experience with cloud infrastructure, particularly Amazon Web Services (AWS) or Google Cloud Platform (GCP).
+- Proven track record building and securing scalable REST APIs and microservice architectures.
+- Solid understanding of Git version control, unit testing (pytest), and CI/CD automation pipelines.
+
+Preferred / Bonus Skills:
+- Experience with Redis caching and asynchronous messaging (RabbitMQ or Kafka).
+- Familiarity with frontend frameworks (React or Next.js) for full-stack collaboration.

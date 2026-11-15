@@ -1,0 +1,274 @@
+{
+  "target_jd": "Senior Backend Engineer (Python / FastAPI)",
+  "required_years": 4.0,
+  "required_skills": [
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "Docker",
+    "AWS",
+    "REST API",
+    "Git"
+  ],
+  "preferred_skills": [
+    "Redis",
+    "RabbitMQ",
+    "React",
+    "Next.js"
+  ],
+  "candidates": [
+    {
+      "id": "cand_01",
+      "name": "Alex Morgan",
+      "filename": "Alex_Morgan_Resume.pdf",
+      "format": "pdf",
+      "layout": "standard",
+      "expected_rank": 1,
+      "total_years_exp": 6.5,
+      "relevant_years_exp": 6.5,
+      "skills": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Docker",
+        "AWS",
+        "REST API",
+        "Git",
+        "Redis",
+        "CI/CD",
+        "Linux",
+        "Microservices"
+      ],
+      "degree": "Master of Science in Computer Science"
+    },
+    {
+      "id": "cand_02",
+      "name": "Sarah Chen",
+      "filename": "Sarah_Chen_Resume.pdf",
+      "format": "pdf",
+      "layout": "standard",
+      "expected_rank": 2,
+      "total_years_exp": 5.2,
+      "relevant_years_exp": 5.2,
+      "skills": [
+        "Python",
+        "FastAPI",
+        "React",
+        "PostgreSQL",
+        "Docker",
+        "REST API",
+        "Git",
+        "TypeScript",
+        "Tailwind CSS"
+      ],
+      "degree": "Bachelor of Science in Computer Science"
+    },
+    {
+      "id": "cand_03",
+      "name": "David Kumar",
+      "filename": "David_Kumar_Resume.pdf",
+      "format": "pdf",
+      "layout": "two_column",
+      "expected_rank": 3,
+      "total_years_exp": 3.8,
+      "relevant_years_exp": 3.8,
+      "skills": [
+        "Python",
+        "Django",
+        "FastAPI",
+        "PostgreSQL",
+        "Docker",
+        "Git",
+        "REST API",
+        "Linux"
+      ],
+      "degree": "Bachelor of Technology in Information Technology"
+    },
+    {
+      "id": "cand_04",
+      "name": "Marcus Vance",
+      "filename": "Marcus_Vance_Resume.docx",
+      "format": "docx",
+      "layout": "standard",
+      "expected_rank": 4,
+      "total_years_exp": 5.0,
+      "relevant_years_exp": 4.0,
+      "skills": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "Python",
+        "Terraform",
+        "CI/CD",
+        "Linux",
+        "Bash",
+        "Git"
+      ],
+      "degree": "Bachelor of Science in Computer Systems"
+    },
+    {
+      "id": "cand_05",
+      "name": "Elena Rostova",
+      "filename": "Elena_Rostova_Resume.pdf",
+      "format": "pdf",
+      "layout": "standard",
+      "expected_rank": 5,
+      "total_years_exp": 4.2,
+      "relevant_years_exp": 2.0,
+      "skills": [
+        "React",
+        "JavaScript",
+        "TypeScript",
+        "Next.js",
+        "Redux",
+        "Tailwind CSS",
+        "HTML5",
+        "CSS3",
+        "REST API",
+        "Git"
+      ],
+      "degree": "Bachelor of Science in Software Engineering"
+    },
+    {
+      "id": "cand_06",
+      "name": "Brian O'Connor",
+      "filename": "Brian_OConnor_Resume.pdf",
+      "format": "pdf",
+      "layout": "table",
+      "expected_rank": 6,
+      "total_years_exp": 3.5,
+      "relevant_years_exp": 3.0,
+      "skills": [
+        "Python",
+        "SQL",
+        "PostgreSQL",
+        "Pandas",
+        "NumPy",
+        "Docker",
+        "Git",
+        "Linux",
+        "Apache Spark"
+      ],
+      "degree": "Master of Science in Data Analytics"
+    },
+    {
+      "id": "cand_07",
+      "name": "Priya Sharma",
+      "filename": "Priya_Sharma_Resume.docx",
+      "format": "docx",
+      "layout": "standard",
+      "expected_rank": 7,
+      "total_years_exp": 1.8,
+      "relevant_years_exp": 1.8,
+      "skills": [
+        "Python",
+        "FastAPI",
+        "SQLite",
+        "Git",
+        "REST API",
+        "pytest",
+        "Docker"
+      ],
+      "degree": "Bachelor of Science in Computer Science"
+    },
+    {
+      "id": "cand_08",
+      "name": "James Wilson",
+      "filename": "James_Wilson_Resume.pdf",
+      "format": "pdf",
+      "layout": "standard",
+      "expected_rank": 8,
+      "total_years_exp": 6.2,
+      "relevant_years_exp": 2.5,
+      "skills": [
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "Microservices",
+        "REST API",
+        "Docker",
+        "Git",
+        "Hibernate"
+      ],
+      "degree": "Bachelor of Science in Computer Science"
+    },
+    {
+      "id": "cand_09",
+      "name": "Maya Lin",
+      "filename": "Maya_Lin_Resume.docx",
+      "format": "docx",
+      "layout": "standard",
+      "expected_rank": 9,
+      "total_years_exp": 0.9,
+      "relevant_years_exp": 0.9,
+      "skills": [
+        "Python",
+        "Flask",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "Git",
+        "SQLite"
+      ],
+      "degree": "Coding Bootcamp Certificate in Full-Stack Web Development"
+    },
+    {
+      "id": "cand_10",
+      "name": "Lucas Scott",
+      "filename": "Lucas_Scott_Resume.pdf",
+      "format": "pdf",
+      "layout": "standard",
+      "expected_rank": 10,
+      "total_years_exp": 3.2,
+      "relevant_years_exp": 1.0,
+      "skills": [
+        "Selenium",
+        "Python",
+        "Unit Testing",
+        "pytest",
+        "CI/CD",
+        "Git",
+        "Jenkins"
+      ],
+      "degree": "Bachelor of Science in Information Systems"
+    },
+    {
+      "id": "cand_11",
+      "name": "Daniel Martinez",
+      "filename": "Daniel_Martinez_Resume.docx",
+      "format": "docx",
+      "layout": "standard",
+      "expected_rank": 11,
+      "total_years_exp": 3.5,
+      "relevant_years_exp": 0.5,
+      "skills": [
+        "SQL",
+        "Excel",
+        "Tableau",
+        "PowerBI",
+        "Pandas",
+        "Agile"
+      ],
+      "degree": "Bachelor of Business Administration in Finance"
+    },
+    {
+      "id": "cand_12",
+      "name": "Chloe Dubois",
+      "filename": "Chloe_Dubois_Resume.pdf",
+      "format": "pdf",
+      "layout": "standard",
+      "expected_rank": 12,
+      "total_years_exp": 4.5,
+      "relevant_years_exp": 0.0,
+      "skills": [
+        "Figma",
+        "Adobe XD",
+        "Illustrator",
+        "Photoshop",
+        "CSS",
+        "Wireframing"
+      ],
+      "degree": "Bachelor of Fine Arts in Graphic Design"
+    }
+  ]
+}

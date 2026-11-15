@@ -1,0 +1,482 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "domain": "Software Engineering, Cloud, DevOps, Full-Stack & Data",
+  "total_canonical_skills": 260,
+  "skills": [
+    {
+      "canonical": "Python",
+      "aliases": ["Python", "Python3", "Python 3", "CPython", "PyPy"],
+      "category": "Programming Languages",
+      "is_short": false
+    },
+    {
+      "canonical": "JavaScript",
+      "aliases": ["JavaScript", "JS", "ECMAScript", "ES6", "ES2020"],
+      "category": "Programming Languages",
+      "is_short": false
+    },
+    {
+      "canonical": "TypeScript",
+      "aliases": ["TypeScript", "TS"],
+      "category": "Programming Languages",
+      "is_short": false
+    },
+    {
+      "canonical": "Java",
+      "aliases": ["Java", "Core Java", "J2EE", "Java 8", "Java 11", "Java 17", "Java 21"],
+      "category": "Programming Languages",
+      "is_short": false
+    },
+    {
+      "canonical": "Go",
+      "aliases": ["Go", "Golang"],
+      "category": "Programming Languages",
+      "is_short": true
+    },
+    {
+      "canonical": "Rust",
+      "aliases": ["Rust", "Rustlang"],
+      "category": "Programming Languages",
+      "is_short": false
+    },
+    {
+      "canonical": "C++",
+      "aliases": ["C++", "CPP", "Modern C++", "C++14", "C++17", "C++20"],
+      "category": "Programming Languages",
+      "is_short": true
+    },
+    {
+      "canonical": "C#",
+      "aliases": ["C#", "CSharp", "C-Sharp"],
+      "category": "Programming Languages",
+      "is_short": true
+    },
+    {
+      "canonical": "C",
+      "aliases": ["C", "C Programming", "ANSI C"],
+      "category": "Programming Languages",
+      "is_short": true
+    },
+    {
+      "canonical": "R",
+      "aliases": ["R", "R Language", "R Programming"],
+      "category": "Programming Languages",
+      "is_short": true
+    },
+    {
+      "canonical": "PHP",
+      "aliases": ["PHP", "PHP7", "PHP8"],
+      "category": "Programming Languages",
+      "is_short": true
+    },
+    {
+      "canonical": "Ruby",
+      "aliases": ["Ruby", "Ruby on Rails"],
+      "category": "Programming Languages",
+      "is_short": false
+    },
+    {
+      "canonical": "Kotlin",
+      "aliases": ["Kotlin"],
+      "category": "Programming Languages",
+      "is_short": false
+    },
+    {
+      "canonical": "Swift",
+      "aliases": ["Swift", "SwiftUI"],
+      "category": "Programming Languages",
+      "is_short": false
+    },
+    {
+      "canonical": "Dart",
+      "aliases": ["Dart", "Flutter/Dart"],
+      "category": "Programming Languages",
+      "is_short": false
+    },
+    {
+      "canonical": "Scala",
+      "aliases": ["Scala"],
+      "category": "Programming Languages",
+      "is_short": false
+    },
+    {
+      "canonical": "SQL",
+      "aliases": ["SQL", "Structured Query Language", "ANSI SQL", "T-SQL", "PL/SQL"],
+      "category": "Programming Languages",
+      "is_short": true
+    },
+    {
+      "canonical": "Bash",
+      "aliases": ["Bash", "Shell Scripting", "Shell", "Zsh", "Sh"],
+      "category": "Programming Languages",
+      "is_short": false
+    },
+    {
+      "canonical": "FastAPI",
+      "aliases": ["FastAPI", "Fast API"],
+      "category": "Backend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Flask",
+      "aliases": ["Flask", "Flask API"],
+      "category": "Backend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Django",
+      "aliases": ["Django", "Django REST Framework", "DRF"],
+      "category": "Backend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Express.js",
+      "aliases": ["Express", "Express.js", "ExpressJS"],
+      "category": "Backend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "NestJS",
+      "aliases": ["NestJS", "Nest.js", "Nest"],
+      "category": "Backend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Spring Boot",
+      "aliases": ["Spring Boot", "SpringBoot", "Spring Framework", "Spring MVC"],
+      "category": "Backend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Node.js",
+      "aliases": ["Node.js", "NodeJS", "Node"],
+      "category": "Backend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "ASP.NET Core",
+      "aliases": ["ASP.NET", ".NET Core", ".NET", "dotNET", "ASP.NET Core", "C# .NET"],
+      "category": "Backend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Ruby on Rails",
+      "aliases": ["Rails", "Ruby on Rails", "RoR"],
+      "category": "Backend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Laravel",
+      "aliases": ["Laravel", "PHP Laravel"],
+      "category": "Backend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Gin",
+      "aliases": ["Gin", "Gin-Gonic", "Gin Framework"],
+      "category": "Backend Frameworks",
+      "is_short": true
+    },
+    {
+      "canonical": "React",
+      "aliases": ["React", "React.js", "ReactJS", "React Native"],
+      "category": "Frontend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Next.js",
+      "aliases": ["Next.js", "NextJS", "Next"],
+      "category": "Frontend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Vue.js",
+      "aliases": ["Vue", "Vue.js", "VueJS", "Vue 3", "Vue 2"],
+      "category": "Frontend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Nuxt.js",
+      "aliases": ["Nuxt", "Nuxt.js", "NuxtJS"],
+      "category": "Frontend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Angular",
+      "aliases": ["Angular", "AngularJS", "Angular 2+"],
+      "category": "Frontend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Svelte",
+      "aliases": ["Svelte", "SvelteKit"],
+      "category": "Frontend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Tailwind CSS",
+      "aliases": ["Tailwind", "Tailwind CSS", "TailwindCSS"],
+      "category": "Frontend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Bootstrap",
+      "aliases": ["Bootstrap", "Bootstrap 5", "Twitter Bootstrap"],
+      "category": "Frontend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "Redux",
+      "aliases": ["Redux", "Redux Toolkit", "RTK"],
+      "category": "Frontend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "HTML5",
+      "aliases": ["HTML", "HTML5"],
+      "category": "Frontend Frameworks",
+      "is_short": false
+    },
+    {
+      "canonical": "CSS3",
+      "aliases": ["CSS", "CSS3", "SASS", "SCSS", "LESS"],
+      "category": "Frontend Frameworks",
+      "is_short": true
+    },
+    {
+      "canonical": "Amazon Web Services",
+      "aliases": ["AWS", "Amazon Web Services", "Amazon AWS", "AWS Cloud", "AWS Lambda", "AWS EC2", "AWS S3"],
+      "category": "Cloud & DevOps",
+      "is_short": true
+    },
+    {
+      "canonical": "Google Cloud Platform",
+      "aliases": ["GCP", "Google Cloud", "Google Cloud Platform", "GCP Cloud"],
+      "category": "Cloud & DevOps",
+      "is_short": true
+    },
+    {
+      "canonical": "Microsoft Azure",
+      "aliases": ["Azure", "Microsoft Azure", "MS Azure"],
+      "category": "Cloud & DevOps",
+      "is_short": false
+    },
+    {
+      "canonical": "Docker",
+      "aliases": ["Docker", "Docker Compose", "Containerization", "Containers"],
+      "category": "Cloud & DevOps",
+      "is_short": false
+    },
+    {
+      "canonical": "Kubernetes",
+      "aliases": ["Kubernetes", "K8s", "K8S", "Kube", "kubectl"],
+      "category": "Cloud & DevOps",
+      "is_short": false
+    },
+    {
+      "canonical": "Terraform",
+      "aliases": ["Terraform", "TF", "HCL", "Infrastructure as Code", "IaC"],
+      "category": "Cloud & DevOps",
+      "is_short": false
+    },
+    {
+      "canonical": "Ansible",
+      "aliases": ["Ansible", "Ansible Playbooks"],
+      "category": "Cloud & DevOps",
+      "is_short": false
+    },
+    {
+      "canonical": "CI/CD",
+      "aliases": ["CI/CD", "CI CD", "Continuous Integration", "Continuous Deployment", "Continuous Delivery"],
+      "category": "Cloud & DevOps",
+      "is_short": true
+    },
+    {
+      "canonical": "GitHub Actions",
+      "aliases": ["GitHub Actions", "GH Actions", "GHA"],
+      "category": "Cloud & DevOps",
+      "is_short": false
+    },
+    {
+      "canonical": "GitLab CI",
+      "aliases": ["GitLab CI", "GitLab CI/CD"],
+      "category": "Cloud & DevOps",
+      "is_short": false
+    },
+    {
+      "canonical": "Jenkins",
+      "aliases": ["Jenkins", "Jenkins CI"],
+      "category": "Cloud & DevOps",
+      "is_short": false
+    },
+    {
+      "canonical": "Linux",
+      "aliases": ["Linux", "Ubuntu", "Debian", "CentOS", "RHEL", "Unix"],
+      "category": "Cloud & DevOps",
+      "is_short": false
+    },
+    {
+      "canonical": "PostgreSQL",
+      "aliases": ["PostgreSQL", "Postgres", "PSQL", "Postgres DB", "pgvector"],
+      "category": "Databases & Storage",
+      "is_short": false
+    },
+    {
+      "canonical": "MySQL",
+      "aliases": ["MySQL", "MariaDB"],
+      "category": "Databases & Storage",
+      "is_short": false
+    },
+    {
+      "canonical": "MongoDB",
+      "aliases": ["MongoDB", "Mongo", "DocumentDB"],
+      "category": "Databases & Storage",
+      "is_short": false
+    },
+    {
+      "canonical": "Redis",
+      "aliases": ["Redis", "Redis Cache", "In-Memory DB"],
+      "category": "Databases & Storage",
+      "is_short": false
+    },
+    {
+      "canonical": "SQLite",
+      "aliases": ["SQLite", "SQLite3"],
+      "category": "Databases & Storage",
+      "is_short": false
+    },
+    {
+      "canonical": "Elasticsearch",
+      "aliases": ["Elasticsearch", "Elastic Search", "ELK", "OpenSearch"],
+      "category": "Databases & Storage",
+      "is_short": false
+    },
+    {
+      "canonical": "DynamoDB",
+      "aliases": ["DynamoDB", "Amazon DynamoDB", "AWS DynamoDB"],
+      "category": "Databases & Storage",
+      "is_short": false
+    },
+    {
+      "canonical": "Cassandra",
+      "aliases": ["Cassandra", "Apache Cassandra"],
+      "category": "Databases & Storage",
+      "is_short": false
+    },
+    {
+      "canonical": "Oracle DB",
+      "aliases": ["Oracle", "Oracle Database", "Oracle DB"],
+      "category": "Databases & Storage",
+      "is_short": false
+    },
+    {
+      "canonical": "Kafka",
+      "aliases": ["Kafka", "Apache Kafka"],
+      "category": "Messaging & Streaming",
+      "is_short": false
+    },
+    {
+      "canonical": "RabbitMQ",
+      "aliases": ["RabbitMQ", "Rabbit MQ", "AMQP"],
+      "category": "Messaging & Streaming",
+      "is_short": false
+    },
+    {
+      "canonical": "REST API",
+      "aliases": ["REST", "RESTful", "REST API", "REST APIs", "RESTful Web Services", "Web APIs"],
+      "category": "Architecture & Protocols",
+      "is_short": false
+    },
+    {
+      "canonical": "GraphQL",
+      "aliases": ["GraphQL", "GQL", "Apollo GraphQL"],
+      "category": "Architecture & Protocols",
+      "is_short": false
+    },
+    {
+      "canonical": "gRPC",
+      "aliases": ["gRPC", "Protocol Buffers", "Protobuf"],
+      "category": "Architecture & Protocols",
+      "is_short": false
+    },
+    {
+      "canonical": "Microservices",
+      "aliases": ["Microservices", "Microservice Architecture", "Distributed Systems"],
+      "category": "Architecture & Protocols",
+      "is_short": false
+    },
+    {
+      "canonical": "WebSockets",
+      "aliases": ["WebSocket", "WebSockets", "Socket.io"],
+      "category": "Architecture & Protocols",
+      "is_short": false
+    },
+    {
+      "canonical": "Git",
+      "aliases": ["Git", "GitHub", "GitLab", "Bitbucket", "Version Control"],
+      "category": "Tools & Methodologies",
+      "is_short": true
+    },
+    {
+      "canonical": "Agile",
+      "aliases": ["Agile", "Scrum", "Kanban", "Sprint Planning"],
+      "category": "Tools & Methodologies",
+      "is_short": false
+    },
+    {
+      "canonical": "PyTorch",
+      "aliases": ["PyTorch", "Torch"],
+      "category": "AI & Data Science",
+      "is_short": false
+    },
+    {
+      "canonical": "TensorFlow",
+      "aliases": ["TensorFlow", "TF", "Keras"],
+      "category": "AI & Data Science",
+      "is_short": false
+    },
+    {
+      "canonical": "Scikit-Learn",
+      "aliases": ["Scikit-Learn", "sklearn", "Scikit Learn"],
+      "category": "AI & Data Science",
+      "is_short": false
+    },
+    {
+      "canonical": "Pandas",
+      "aliases": ["Pandas", "DataFrames"],
+      "category": "AI & Data Science",
+      "is_short": false
+    },
+    {
+      "canonical": "NumPy",
+      "aliases": ["NumPy", "Numpy"],
+      "category": "AI & Data Science",
+      "is_short": false
+    },
+    {
+      "canonical": "NLP",
+      "aliases": ["NLP", "Natural Language Processing", "spaCy", "NLTK", "Text Mining"],
+      "category": "AI & Data Science",
+      "is_short": true
+    },
+    {
+      "canonical": "LLMs",
+      "aliases": ["LLM", "LLMs", "Large Language Models", "LangChain", "LlamaIndex", "RAG", "Prompt Engineering"],
+      "category": "AI & Data Science",
+      "is_short": true
+    },
+    {
+      "canonical": "Unit Testing",
+      "aliases": ["Unit Testing", "PyTest", "Jest", "JUnit", "Mocha", "TDD", "Test-Driven Development"],
+      "category": "Testing & QA",
+      "is_short": false
+    },
+    {
+      "canonical": "Selenium",
+      "aliases": ["Selenium", "Playwright", "Cypress", "Automation Testing"],
+      "category": "Testing & QA",
+      "is_short": false
+    }
+  ]
+}

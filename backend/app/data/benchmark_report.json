@@ -1,0 +1,1102 @@
+{
+  "metrics": {
+    "precision": 74.8,
+    "recall": 81.5,
+    "f1_score": 77.2,
+    "mean_experience_error": 3.42,
+    "spearman_rank_correlation": 0.951,
+    "p_value": 2.0384246324655723e-06,
+    "peak_memory_mb": 667.1,
+    "total_batch_time_sec": 6.98,
+    "avg_time_per_resume_sec": 0.58
+  },
+  "rankings": [
+    {
+      "filename": "Alex_Morgan_Resume.pdf",
+      "candidate_name": "Alex Morgan",
+      "email": "alex.morgan@email.com",
+      "phone": "(555) 234-5678",
+      "relevant_experience": 8.5,
+      "total_experience": 8.5,
+      "overall_score": 80.0,
+      "breakdown": {
+        "skills_score": 60.0,
+        "experience_score": 100.0,
+        "semantic_score": 83.8,
+        "education_score": 100.0,
+        "weights": {
+          "skills": 0.4,
+          "experience": 0.25,
+          "semantic": 0.25,
+          "education": 0.1
+        }
+      },
+      "matched_skills": [
+        "Amazon Web Services",
+        "CI/CD",
+        "Git",
+        "Python",
+        "FastAPI",
+        "Flask",
+        "Docker",
+        "PostgreSQL",
+        "Redis",
+        "REST API",
+        "Microservices",
+        "Unit Testing"
+      ],
+      "missing_skills": [
+        "JavaScript",
+        "Google Cloud Platform",
+        "React",
+        "Next.js",
+        "Kubernetes",
+        "Kafka",
+        "RabbitMQ",
+        "Selenium"
+      ],
+      "all_skills": [
+        "SQL",
+        "Amazon Web Services",
+        "CI/CD",
+        "Git",
+        "Python",
+        "FastAPI",
+        "Flask",
+        "Docker",
+        "GitHub Actions",
+        "Linux",
+        "PostgreSQL",
+        "Redis",
+        "REST API",
+        "Microservices",
+        "Unit Testing"
+      ],
+      "education_level": 3,
+      "rationale": [
+        "Solid match (80.0%) with high potential; minor skill or experience gaps identified.",
+        "Skills: Matched 12 of 20 required skills (60% coverage). Key matches: Amazon Web Services, CI/CD, Git, Python.",
+        "Skill Gaps: Missing core requirements: JavaScript, Google Cloud Platform, React, Next.js.",
+        "Experience: Exceeds target tenure (8.5 yrs evaluated vs 4.0 yrs required).",
+        "Semantic Alignment: 83.8% calibrated alignment based on direct resume bullet citations."
+      ],
+      "requirement_citations": [
+        {
+          "requirement": "Experience Required: 4+ years of relevant backend software engineering experience",
+          "best_matching_chunk": "Mentored junior engineers and led code reviews adhering to strict pytest unit testing standards.\nBackend Software Developer - Nexus Web Systems Jun 2018 - Dec 2020",
+          "similarity": 0.734,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "We are seeking an experienced Senior Backend Engineer to architect, build, and scale our high-throughput distributed microservices. You will lead API design, optimize database queries, implement asynchronous worker pipelines, and maintain CI/CD and cloud deployment infrastructure.",
+          "best_matching_chunk": "Lead Backend Engineer - DataStream Inc Jan 2021 - Present",
+          "similarity": 0.774,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "4+ years of professional backend software development experience.",
+          "best_matching_chunk": "Mentored junior engineers and led code reviews adhering to strict pytest unit testing standards.\nBackend Software Developer - Nexus Web Systems Jun 2018 - Dec 2020",
+          "similarity": 0.722,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "Strong proficiency in Python 3 and modern async frameworks (FastAPI or Flask).",
+          "best_matching_chunk": "Developed high-volume REST APIs in Python using Flask and PostgreSQL with SQLAlchemy ORM.",
+          "similarity": 0.767,
+          "is_satisfied": true
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "filename": "David_Kumar_Resume.pdf",
+      "candidate_name": "David Kumar",
+      "email": "david.kumar@inbox.org",
+      "phone": "(555) 456-7890",
+      "relevant_experience": 6.6,
+      "total_experience": 6.6,
+      "overall_score": 68.5,
+      "breakdown": {
+        "skills_score": 40.0,
+        "experience_score": 100.0,
+        "semantic_score": 80.0,
+        "education_score": 75.0,
+        "weights": {
+          "skills": 0.4,
+          "experience": 0.25,
+          "semantic": 0.25,
+          "education": 0.1
+        }
+      },
+      "matched_skills": [
+        "Git",
+        "Python",
+        "FastAPI",
+        "Docker",
+        "PostgreSQL",
+        "REST API",
+        "Microservices",
+        "Unit Testing"
+      ],
+      "missing_skills": [
+        "JavaScript",
+        "Amazon Web Services",
+        "Google Cloud Platform",
+        "CI/CD",
+        "Flask",
+        "React",
+        "Next.js",
+        "Kubernetes",
+        "Redis",
+        "Kafka",
+        "RabbitMQ",
+        "Selenium"
+      ],
+      "all_skills": [
+        "Git",
+        "Python",
+        "FastAPI",
+        "Django",
+        "Docker",
+        "Linux",
+        "PostgreSQL",
+        "REST API",
+        "Microservices",
+        "Unit Testing"
+      ],
+      "education_level": 2,
+      "rationale": [
+        "Moderate match (68.5%); partially qualified with notable differences in core technical stack.",
+        "Skills: Matched 8 of 20 required skills (40% coverage). Key matches: Git, Python, FastAPI, Docker.",
+        "Skill Gaps: Missing core requirements: JavaScript, Amazon Web Services, Google Cloud Platform, CI/CD.",
+        "Experience: Exceeds target tenure (6.6 yrs evaluated vs 4.0 yrs required).",
+        "Semantic Alignment: 80.0% calibrated alignment based on direct resume bullet citations."
+      ],
+      "requirement_citations": [
+        {
+          "requirement": "Experience Required: 4+ years of relevant backend software engineering experience",
+          "best_matching_chunk": "Backend Developer - Apex Software Labs\nJul 2021 - Present",
+          "similarity": 0.783,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "We are seeking an experienced Senior Backend Engineer to architect, build, and scale our high-throughput distributed microservices. You will lead API design, optimize database queries, implement asynchronous worker pipelines, and maintain CI/CD and cloud deployment infrastructure.",
+          "best_matching_chunk": "Backend Developer - Apex Software Labs\nJul 2021 - Present",
+          "similarity": 0.764,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "4+ years of professional backend software development experience.",
+          "best_matching_chunk": "Backend Developer - Apex Software Labs\nJul 2021 - Present",
+          "similarity": 0.779,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "Strong proficiency in Python 3 and modern async frameworks (FastAPI or Flask).",
+          "best_matching_chunk": "Migrated legacy Django services to async FastAPI microservices, increasing throughput\nby 60%.",
+          "similarity": 0.767,
+          "is_satisfied": true
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "filename": "Sarah_Chen_Resume.pdf",
+      "candidate_name": "Sarah Chen",
+      "email": "sarah.chen@techmail.com",
+      "phone": "(555) 345-6789",
+      "relevant_experience": 7.9,
+      "total_experience": 7.9,
+      "overall_score": 67.5,
+      "breakdown": {
+        "skills_score": 40.0,
+        "experience_score": 100.0,
+        "semantic_score": 76.1,
+        "education_score": 75.0,
+        "weights": {
+          "skills": 0.4,
+          "experience": 0.25,
+          "semantic": 0.25,
+          "education": 0.1
+        }
+      },
+      "matched_skills": [
+        "Git",
+        "Python",
+        "FastAPI",
+        "React",
+        "Docker",
+        "PostgreSQL",
+        "REST API",
+        "Unit Testing"
+      ],
+      "missing_skills": [
+        "JavaScript",
+        "Amazon Web Services",
+        "Google Cloud Platform",
+        "CI/CD",
+        "Flask",
+        "Next.js",
+        "Kubernetes",
+        "Redis",
+        "Kafka",
+        "RabbitMQ",
+        "Microservices",
+        "Selenium"
+      ],
+      "all_skills": [
+        "CSS3",
+        "Git",
+        "Python",
+        "TypeScript",
+        "FastAPI",
+        "React",
+        "Tailwind CSS",
+        "Docker",
+        "PostgreSQL",
+        "REST API",
+        "Unit Testing"
+      ],
+      "education_level": 2,
+      "rationale": [
+        "Moderate match (67.5%); partially qualified with notable differences in core technical stack.",
+        "Skills: Matched 8 of 20 required skills (40% coverage). Key matches: Git, Python, FastAPI, React.",
+        "Skill Gaps: Missing core requirements: JavaScript, Amazon Web Services, Google Cloud Platform, CI/CD.",
+        "Experience: Exceeds target tenure (7.9 yrs evaluated vs 4.0 yrs required).",
+        "Semantic Alignment: 76.1% calibrated alignment based on direct resume bullet citations."
+      ],
+      "requirement_citations": [
+        {
+          "requirement": "Experience Required: 4+ years of relevant backend software engineering experience",
+          "best_matching_chunk": "Senior Full-Stack Developer - Fintech Solutions Ltd Mar 2021 - Present",
+          "similarity": 0.672,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "We are seeking an experienced Senior Backend Engineer to architect, build, and scale our high-throughput distributed microservices. You will lead API design, optimize database queries, implement asynchronous worker pipelines, and maintain CI/CD and cloud deployment infrastructure.",
+          "best_matching_chunk": "Senior Full-Stack Developer - Fintech Solutions Ltd Mar 2021 - Present",
+          "similarity": 0.686,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "4+ years of professional backend software development experience.",
+          "best_matching_chunk": "Senior Full-Stack Developer - Fintech Solutions Ltd Mar 2021 - Present",
+          "similarity": 0.677,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "Strong proficiency in Python 3 and modern async frameworks (FastAPI or Flask).",
+          "best_matching_chunk": "Designed RESTful APIs in Python and integrated third-party payment gateways (Stripe, Plaid).",
+          "similarity": 0.767,
+          "is_satisfied": true
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "filename": "Elena_Rostova_Resume.pdf",
+      "candidate_name": "Elena Rostova",
+      "email": "elena.rostova@devmail.io",
+      "phone": "(555) 678-9012",
+      "relevant_experience": 6.9,
+      "total_experience": 6.9,
+      "overall_score": 64.6,
+      "breakdown": {
+        "skills_score": 35.0,
+        "experience_score": 100.0,
+        "semantic_score": 72.3,
+        "education_score": 75.0,
+        "weights": {
+          "skills": 0.4,
+          "experience": 0.25,
+          "semantic": 0.25,
+          "education": 0.1
+        }
+      },
+      "matched_skills": [
+        "JavaScript",
+        "Git",
+        "React",
+        "Next.js",
+        "REST API",
+        "Unit Testing",
+        "Selenium"
+      ],
+      "missing_skills": [
+        "Amazon Web Services",
+        "Google Cloud Platform",
+        "CI/CD",
+        "Python",
+        "FastAPI",
+        "Flask",
+        "Docker",
+        "Kubernetes",
+        "PostgreSQL",
+        "Redis",
+        "Kafka",
+        "RabbitMQ",
+        "Microservices"
+      ],
+      "all_skills": [
+        "JavaScript",
+        "CSS3",
+        "Git",
+        "TypeScript",
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Redux",
+        "HTML5",
+        "REST API",
+        "WebSockets",
+        "Unit Testing",
+        "Selenium"
+      ],
+      "education_level": 2,
+      "rationale": [
+        "Moderate match (64.6%); partially qualified with notable differences in core technical stack.",
+        "Skills: Matched 7 of 20 required skills (35% coverage). Key matches: JavaScript, Git, React, Next.js.",
+        "Skill Gaps: Missing core requirements: Amazon Web Services, Google Cloud Platform, CI/CD, Python.",
+        "Experience: Exceeds target tenure (6.9 yrs evaluated vs 4.0 yrs required).",
+        "Semantic Alignment: 72.3% calibrated alignment based on direct resume bullet citations."
+      ],
+      "requirement_citations": [
+        {
+          "requirement": "Experience Required: 4+ years of relevant backend software engineering experience",
+          "best_matching_chunk": "Frontend Developer - Vivid Interfaces Feb 2021 - Present",
+          "similarity": 0.708,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "We are seeking an experienced Senior Backend Engineer to architect, build, and scale our high-throughput distributed microservices. You will lead API design, optimize database queries, implement asynchronous worker pipelines, and maintain CI/CD and cloud deployment infrastructure.",
+          "best_matching_chunk": "Collaborated with backend engineers to consume RESTful endpoints.",
+          "similarity": 0.742,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "4+ years of professional backend software development experience.",
+          "best_matching_chunk": "Collaborated with backend engineers to consume RESTful endpoints.",
+          "similarity": 0.699,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "Strong proficiency in Python 3 and modern async frameworks (FastAPI or Flask).",
+          "best_matching_chunk": "Engineered modern web UI with React, Next.js, and TypeScript serving 100k daily active users.",
+          "similarity": 0.712,
+          "is_satisfied": true
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "filename": "Priya_Sharma_Resume.docx",
+      "candidate_name": "Priya Sharma",
+      "email": "priya.sharma@youngdev.io",
+      "phone": "(555) 890-1234",
+      "relevant_experience": 4.4,
+      "total_experience": 4.4,
+      "overall_score": 62.8,
+      "breakdown": {
+        "skills_score": 35.0,
+        "experience_score": 100.0,
+        "semantic_score": 65.0,
+        "education_score": 75.0,
+        "weights": {
+          "skills": 0.4,
+          "experience": 0.25,
+          "semantic": 0.25,
+          "education": 0.1
+        }
+      },
+      "matched_skills": [
+        "Git",
+        "Python",
+        "FastAPI",
+        "Docker",
+        "REST API",
+        "Microservices",
+        "Unit Testing"
+      ],
+      "missing_skills": [
+        "JavaScript",
+        "Amazon Web Services",
+        "Google Cloud Platform",
+        "CI/CD",
+        "Flask",
+        "React",
+        "Next.js",
+        "Kubernetes",
+        "PostgreSQL",
+        "Redis",
+        "Kafka",
+        "RabbitMQ",
+        "Selenium"
+      ],
+      "all_skills": [
+        "Git",
+        "Python",
+        "FastAPI",
+        "Docker",
+        "SQLite",
+        "REST API",
+        "Microservices",
+        "Unit Testing"
+      ],
+      "education_level": 2,
+      "rationale": [
+        "Moderate match (62.8%); partially qualified with notable differences in core technical stack.",
+        "Skills: Matched 7 of 20 required skills (35% coverage). Key matches: Git, Python, FastAPI, Docker.",
+        "Skill Gaps: Missing core requirements: JavaScript, Amazon Web Services, Google Cloud Platform, CI/CD.",
+        "Experience: Exceeds target tenure (4.4 yrs evaluated vs 4.0 yrs required).",
+        "Semantic Alignment: 65.0% calibrated alignment based on direct resume bullet citations."
+      ],
+      "requirement_citations": [
+        {
+          "requirement": "Experience Required: 4+ years of relevant backend software engineering experience",
+          "best_matching_chunk": "Priya Sharma\npriya.sharma@youngdev.io | (555) 890-1234 | Junior Python Developer\nPROFESSIONAL SUMMARY\nEnergetic Junior Python Developer with 1.8 years building microservices and REST APIs with FastAPI, seeking to accelerate backend engineering skills.\nTECHNICAL SKILLS\nPython, FastAPI, SQLite, Git, REST API, pytest, Docker\nWORK EXPERIENCE\nJunior Backend Developer - Sprout Tech Labs (Jul 2022 - Present)\nAssisted in developing REST APIs in Python using FastAPI and SQLite.\nCreated automated test cases with pytest and maintained Git repository branches.\nPackaged microservice components into Docker images for testing.\nEDUCATION\nBachelor of Science in Computer Science",
+          "similarity": 0.667,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "We are seeking an experienced Senior Backend Engineer to architect, build, and scale our high-throughput distributed microservices. You will lead API design, optimize database queries, implement asynchronous worker pipelines, and maintain CI/CD and cloud deployment infrastructure.",
+          "best_matching_chunk": "Priya Sharma\npriya.sharma@youngdev.io | (555) 890-1234 | Junior Python Developer\nPROFESSIONAL SUMMARY\nEnergetic Junior Python Developer with 1.8 years building microservices and REST APIs with FastAPI, seeking to accelerate backend engineering skills.\nTECHNICAL SKILLS\nPython, FastAPI, SQLite, Git, REST API, pytest, Docker\nWORK EXPERIENCE\nJunior Backend Developer - Sprout Tech Labs (Jul 2022 - Present)\nAssisted in developing REST APIs in Python using FastAPI and SQLite.\nCreated automated test cases with pytest and maintained Git repository branches.\nPackaged microservice components into Docker images for testing.\nEDUCATION\nBachelor of Science in Computer Science",
+          "similarity": 0.719,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "4+ years of professional backend software development experience.",
+          "best_matching_chunk": "Priya Sharma\npriya.sharma@youngdev.io | (555) 890-1234 | Junior Python Developer\nPROFESSIONAL SUMMARY\nEnergetic Junior Python Developer with 1.8 years building microservices and REST APIs with FastAPI, seeking to accelerate backend engineering skills.\nTECHNICAL SKILLS\nPython, FastAPI, SQLite, Git, REST API, pytest, Docker\nWORK EXPERIENCE\nJunior Backend Developer - Sprout Tech Labs (Jul 2022 - Present)\nAssisted in developing REST APIs in Python using FastAPI and SQLite.\nCreated automated test cases with pytest and maintained Git repository branches.\nPackaged microservice components into Docker images for testing.\nEDUCATION\nBachelor of Science in Computer Science",
+          "similarity": 0.664,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "Strong proficiency in Python 3 and modern async frameworks (FastAPI or Flask).",
+          "best_matching_chunk": "Priya Sharma\npriya.sharma@youngdev.io | (555) 890-1234 | Junior Python Developer\nPROFESSIONAL SUMMARY\nEnergetic Junior Python Developer with 1.8 years building microservices and REST APIs with FastAPI, seeking to accelerate backend engineering skills.\nTECHNICAL SKILLS\nPython, FastAPI, SQLite, Git, REST API, pytest, Docker\nWORK EXPERIENCE\nJunior Backend Developer - Sprout Tech Labs (Jul 2022 - Present)\nAssisted in developing REST APIs in Python using FastAPI and SQLite.\nCreated automated test cases with pytest and maintained Git repository branches.\nPackaged microservice components into Docker images for testing.\nEDUCATION\nBachelor of Science in Computer Science",
+          "similarity": 0.759,
+          "is_satisfied": true
+        }
+      ],
+      "rank": 5
+    },
+    {
+      "filename": "Marcus_Vance_Resume.docx",
+      "candidate_name": "Marcus Vance",
+      "email": "m.vance@cloudops.net",
+      "phone": "(555) 567-8901",
+      "relevant_experience": 7.9,
+      "total_experience": 7.9,
+      "overall_score": 62.7,
+      "breakdown": {
+        "skills_score": 35.0,
+        "experience_score": 100.0,
+        "semantic_score": 64.8,
+        "education_score": 75.0,
+        "weights": {
+          "skills": 0.4,
+          "experience": 0.25,
+          "semantic": 0.25,
+          "education": 0.1
+        }
+      },
+      "matched_skills": [
+        "Amazon Web Services",
+        "CI/CD",
+        "Git",
+        "Python",
+        "Docker",
+        "Kubernetes",
+        "Microservices"
+      ],
+      "missing_skills": [
+        "JavaScript",
+        "Google Cloud Platform",
+        "FastAPI",
+        "Flask",
+        "React",
+        "Next.js",
+        "PostgreSQL",
+        "Redis",
+        "Kafka",
+        "RabbitMQ",
+        "REST API",
+        "Unit Testing",
+        "Selenium"
+      ],
+      "all_skills": [
+        "Amazon Web Services",
+        "Terraform",
+        "CI/CD",
+        "Git",
+        "Python",
+        "Bash",
+        "ASP.NET Core",
+        "Docker",
+        "Kubernetes",
+        "GitHub Actions",
+        "Linux",
+        "Microservices"
+      ],
+      "education_level": 2,
+      "rationale": [
+        "Moderate match (62.7%); partially qualified with notable differences in core technical stack.",
+        "Skills: Matched 7 of 20 required skills (35% coverage). Key matches: Amazon Web Services, CI/CD, Git, Python.",
+        "Skill Gaps: Missing core requirements: JavaScript, Google Cloud Platform, FastAPI, Flask.",
+        "Experience: Exceeds target tenure (7.9 yrs evaluated vs 4.0 yrs required).",
+        "Semantic Alignment: 64.8% calibrated alignment based on direct resume bullet citations."
+      ],
+      "requirement_citations": [
+        {
+          "requirement": "Experience Required: 4+ years of relevant backend software engineering experience",
+          "best_matching_chunk": "Senior DevOps Engineer - SkyHigh Cloud Systems (Jan 2021 - Present)\nManaged AWS cloud infrastructure (EKS, EC2, RDS, S3) using Terraform Infrastructure as Code (IaC).\nOrchestrated Docker microservices on Kubernetes clusters supporting 50+ enterprise clients.\nAutomated deployment workflows with GitHub Actions CI/CD, reducing deployment cycle times from hours to minutes.\nSite Reliability Engineer - InfraNet Global (Jan 2019 - Dec 2020)\nWrote Python automation scripts for server monitoring, log aggregation, and anomaly alerting.\nMaintained Linux Ubuntu server farms and configured Nginx reverse proxies.",
+          "similarity": 0.677,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "We are seeking an experienced Senior Backend Engineer to architect, build, and scale our high-throughput distributed microservices. You will lead API design, optimize database queries, implement asynchronous worker pipelines, and maintain CI/CD and cloud deployment infrastructure.",
+          "best_matching_chunk": "Senior DevOps Engineer - SkyHigh Cloud Systems (Jan 2021 - Present)\nManaged AWS cloud infrastructure (EKS, EC2, RDS, S3) using Terraform Infrastructure as Code (IaC).\nOrchestrated Docker microservices on Kubernetes clusters supporting 50+ enterprise clients.\nAutomated deployment workflows with GitHub Actions CI/CD, reducing deployment cycle times from hours to minutes.\nSite Reliability Engineer - InfraNet Global (Jan 2019 - Dec 2020)\nWrote Python automation scripts for server monitoring, log aggregation, and anomaly alerting.\nMaintained Linux Ubuntu server farms and configured Nginx reverse proxies.",
+          "similarity": 0.743,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "4+ years of professional backend software development experience.",
+          "best_matching_chunk": "Senior DevOps Engineer - SkyHigh Cloud Systems (Jan 2021 - Present)\nManaged AWS cloud infrastructure (EKS, EC2, RDS, S3) using Terraform Infrastructure as Code (IaC).\nOrchestrated Docker microservices on Kubernetes clusters supporting 50+ enterprise clients.\nAutomated deployment workflows with GitHub Actions CI/CD, reducing deployment cycle times from hours to minutes.\nSite Reliability Engineer - InfraNet Global (Jan 2019 - Dec 2020)\nWrote Python automation scripts for server monitoring, log aggregation, and anomaly alerting.\nMaintained Linux Ubuntu server farms and configured Nginx reverse proxies.",
+          "similarity": 0.655,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "Strong proficiency in Python 3 and modern async frameworks (FastAPI or Flask).",
+          "best_matching_chunk": "Senior DevOps Engineer - SkyHigh Cloud Systems (Jan 2021 - Present)\nManaged AWS cloud infrastructure (EKS, EC2, RDS, S3) using Terraform Infrastructure as Code (IaC).\nOrchestrated Docker microservices on Kubernetes clusters supporting 50+ enterprise clients.\nAutomated deployment workflows with GitHub Actions CI/CD, reducing deployment cycle times from hours to minutes.\nSite Reliability Engineer - InfraNet Global (Jan 2019 - Dec 2020)\nWrote Python automation scripts for server monitoring, log aggregation, and anomaly alerting.\nMaintained Linux Ubuntu server farms and configured Nginx reverse proxies.",
+          "similarity": 0.687,
+          "is_satisfied": true
+        }
+      ],
+      "rank": 6
+    },
+    {
+      "filename": "Brian_OConnor_Resume.pdf",
+      "candidate_name": "Brian O'Connor",
+      "email": "brian.oconnor@datalab.org",
+      "phone": "(555) 789-0123",
+      "relevant_experience": 6.6,
+      "total_experience": 6.6,
+      "overall_score": 61.4,
+      "breakdown": {
+        "skills_score": 20.0,
+        "experience_score": 100.0,
+        "semantic_score": 73.4,
+        "education_score": 100.0,
+        "weights": {
+          "skills": 0.4,
+          "experience": 0.25,
+          "semantic": 0.25,
+          "education": 0.1
+        }
+      },
+      "matched_skills": [
+        "Git",
+        "Python",
+        "Docker",
+        "PostgreSQL"
+      ],
+      "missing_skills": [
+        "JavaScript",
+        "Amazon Web Services",
+        "Google Cloud Platform",
+        "CI/CD",
+        "FastAPI",
+        "Flask",
+        "React",
+        "Next.js",
+        "Kubernetes",
+        "Redis",
+        "Kafka",
+        "RabbitMQ",
+        "REST API",
+        "Microservices",
+        "Unit Testing",
+        "Selenium"
+      ],
+      "all_skills": [
+        "SQL",
+        "Git",
+        "Python",
+        "Docker",
+        "Linux",
+        "PostgreSQL",
+        "Pandas",
+        "NumPy"
+      ],
+      "education_level": 3,
+      "rationale": [
+        "Moderate match (61.4%); partially qualified with notable differences in core technical stack.",
+        "Skills: Matched 4 of 20 required skills (20% coverage). Key matches: Git, Python, Docker, PostgreSQL.",
+        "Skill Gaps: Missing core requirements: JavaScript, Amazon Web Services, Google Cloud Platform, CI/CD.",
+        "Experience: Exceeds target tenure (6.6 yrs evaluated vs 4.0 yrs required).",
+        "Semantic Alignment: 73.4% calibrated alignment based on direct resume bullet citations."
+      ],
+      "requirement_citations": [
+        {
+          "requirement": "Experience Required: 4+ years of relevant backend software engineering experience",
+          "best_matching_chunk": "Data Engineer | Insight Data Partners Oct 2021 - Present",
+          "similarity": 0.66,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "We are seeking an experienced Senior Backend Engineer to architect, build, and scale our high-throughput distributed microservices. You will lead API design, optimize database queries, implement asynchronous worker pipelines, and maintain CI/CD and cloud deployment infrastructure.",
+          "best_matching_chunk": "Data Engineer | Insight Data Partners Oct 2021 - Present",
+          "similarity": 0.724,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "4+ years of professional backend software development experience.",
+          "best_matching_chunk": "Data Engineer | Insight Data Partners Oct 2021 - Present",
+          "similarity": 0.641,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "Strong proficiency in Python 3 and modern async frameworks (FastAPI or Flask).",
+          "best_matching_chunk": "Built ETL data ingestion pipelines using Python, Pandas, and PostgreSQL processing 5M records daily.",
+          "similarity": 0.721,
+          "is_satisfied": true
+        }
+      ],
+      "rank": 7
+    },
+    {
+      "filename": "James_Wilson_Resume.pdf",
+      "candidate_name": "James Wilson",
+      "email": "j.wilson@enterprisecode.com",
+      "phone": "(555) 901-2345",
+      "relevant_experience": 9.5,
+      "total_experience": 9.5,
+      "overall_score": 59.0,
+      "breakdown": {
+        "skills_score": 20.0,
+        "experience_score": 100.0,
+        "semantic_score": 74.1,
+        "education_score": 75.0,
+        "weights": {
+          "skills": 0.4,
+          "experience": 0.25,
+          "semantic": 0.25,
+          "education": 0.1
+        }
+      },
+      "matched_skills": [
+        "Git",
+        "Docker",
+        "REST API",
+        "Microservices"
+      ],
+      "missing_skills": [
+        "JavaScript",
+        "Amazon Web Services",
+        "Google Cloud Platform",
+        "CI/CD",
+        "Python",
+        "FastAPI",
+        "Flask",
+        "React",
+        "Next.js",
+        "Kubernetes",
+        "PostgreSQL",
+        "Redis",
+        "Kafka",
+        "RabbitMQ",
+        "Unit Testing",
+        "Selenium"
+      ],
+      "all_skills": [
+        "Git",
+        "Java",
+        "Spring Boot",
+        "Docker",
+        "MySQL",
+        "REST API",
+        "Microservices",
+        "Agile"
+      ],
+      "education_level": 2,
+      "rationale": [
+        "Moderate match (59.0%); partially qualified with notable differences in core technical stack.",
+        "Skills: Matched 4 of 20 required skills (20% coverage). Key matches: Git, Docker, REST API, Microservices.",
+        "Skill Gaps: Missing core requirements: JavaScript, Amazon Web Services, Google Cloud Platform, CI/CD.",
+        "Experience: Exceeds target tenure (9.5 yrs evaluated vs 4.0 yrs required).",
+        "Semantic Alignment: 74.1% calibrated alignment based on direct resume bullet citations."
+      ],
+      "requirement_citations": [
+        {
+          "requirement": "Experience Required: 4+ years of relevant backend software engineering experience",
+          "best_matching_chunk": "Built secure REST APIs and containerized applications with Docker.\nSoftware Developer - Legacy Tech Corp Jun 2017 - Jan 2020",
+          "similarity": 0.702,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "We are seeking an experienced Senior Backend Engineer to architect, build, and scale our high-throughput distributed microservices. You will lead API design, optimize database queries, implement asynchronous worker pipelines, and maintain CI/CD and cloud deployment infrastructure.",
+          "best_matching_chunk": "Built secure REST APIs and containerized applications with Docker.\nSoftware Developer - Legacy Tech Corp Jun 2017 - Jan 2020",
+          "similarity": 0.732,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "4+ years of professional backend software development experience.",
+          "best_matching_chunk": "Built secure REST APIs and containerized applications with Docker.\nSoftware Developer - Legacy Tech Corp Jun 2017 - Jan 2020",
+          "similarity": 0.695,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "Strong proficiency in Python 3 and modern async frameworks (FastAPI or Flask).",
+          "best_matching_chunk": "Built secure REST APIs and containerized applications with Docker.\nSoftware Developer - Legacy Tech Corp Jun 2017 - Jan 2020",
+          "similarity": 0.669,
+          "is_satisfied": true
+        }
+      ],
+      "rank": 8
+    },
+    {
+      "filename": "Lucas_Scott_Resume.pdf",
+      "candidate_name": "Lucas Scott",
+      "email": "lucas.scott@qualityhub.com",
+      "phone": "(555) 123-7890",
+      "relevant_experience": 4.9,
+      "total_experience": 4.9,
+      "overall_score": 58.1,
+      "breakdown": {
+        "skills_score": 25.0,
+        "experience_score": 100.0,
+        "semantic_score": 62.5,
+        "education_score": 75.0,
+        "weights": {
+          "skills": 0.4,
+          "experience": 0.25,
+          "semantic": 0.25,
+          "education": 0.1
+        }
+      },
+      "matched_skills": [
+        "CI/CD",
+        "Git",
+        "Python",
+        "Unit Testing",
+        "Selenium"
+      ],
+      "missing_skills": [
+        "JavaScript",
+        "Amazon Web Services",
+        "Google Cloud Platform",
+        "FastAPI",
+        "Flask",
+        "React",
+        "Next.js",
+        "Docker",
+        "Kubernetes",
+        "PostgreSQL",
+        "Redis",
+        "Kafka",
+        "RabbitMQ",
+        "REST API",
+        "Microservices"
+      ],
+      "all_skills": [
+        "CI/CD",
+        "Git",
+        "Python",
+        "Jenkins",
+        "Unit Testing",
+        "Selenium"
+      ],
+      "education_level": 2,
+      "rationale": [
+        "Moderate match (58.1%); partially qualified with notable differences in core technical stack.",
+        "Skills: Matched 5 of 20 required skills (25% coverage). Key matches: CI/CD, Git, Python, Unit Testing.",
+        "Skill Gaps: Missing core requirements: JavaScript, Amazon Web Services, Google Cloud Platform, FastAPI.",
+        "Experience: Exceeds target tenure (4.9 yrs evaluated vs 4.0 yrs required).",
+        "Semantic Alignment: 62.5% calibrated alignment based on direct resume bullet citations."
+      ],
+      "requirement_citations": [
+        {
+          "requirement": "Experience Required: 4+ years of relevant backend software engineering experience",
+          "best_matching_chunk": "QA Automation Engineer - VerifySoft Global Jan 2022 - Present",
+          "similarity": 0.677,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "We are seeking an experienced Senior Backend Engineer to architect, build, and scale our high-throughput distributed microservices. You will lead API design, optimize database queries, implement asynchronous worker pipelines, and maintain CI/CD and cloud deployment infrastructure.",
+          "best_matching_chunk": "QA Automation Engineer - VerifySoft Global Jan 2022 - Present",
+          "similarity": 0.679,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "4+ years of professional backend software development experience.",
+          "best_matching_chunk": "QA Automation Engineer - VerifySoft Global Jan 2022 - Present",
+          "similarity": 0.633,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "Strong proficiency in Python 3 and modern async frameworks (FastAPI or Flask).",
+          "best_matching_chunk": "Constructed automated UI testing frameworks using Python and Selenium WebDriver.",
+          "similarity": 0.729,
+          "is_satisfied": true
+        }
+      ],
+      "rank": 9
+    },
+    {
+      "filename": "Maya_Lin_Resume.docx",
+      "candidate_name": "Maya Lin",
+      "email": "maya.lin@bootcampalumni.org",
+      "phone": "(555) 012-3456",
+      "relevant_experience": 3.6,
+      "total_experience": 3.6,
+      "overall_score": 50.0,
+      "breakdown": {
+        "skills_score": 20.0,
+        "experience_score": 90.0,
+        "semantic_score": 58.1,
+        "education_score": 50.0,
+        "weights": {
+          "skills": 0.4,
+          "experience": 0.25,
+          "semantic": 0.25,
+          "education": 0.1
+        }
+      },
+      "matched_skills": [
+        "JavaScript",
+        "Git",
+        "Python",
+        "Flask"
+      ],
+      "missing_skills": [
+        "Amazon Web Services",
+        "Google Cloud Platform",
+        "CI/CD",
+        "FastAPI",
+        "React",
+        "Next.js",
+        "Docker",
+        "Kubernetes",
+        "PostgreSQL",
+        "Redis",
+        "Kafka",
+        "RabbitMQ",
+        "REST API",
+        "Microservices",
+        "Unit Testing",
+        "Selenium"
+      ],
+      "all_skills": [
+        "CSS3",
+        "Git",
+        "Python",
+        "JavaScript",
+        "Flask",
+        "HTML5",
+        "SQLite",
+        "Agile"
+      ],
+      "education_level": 1,
+      "rationale": [
+        "Moderate match (50.0%); partially qualified with notable differences in core technical stack.",
+        "Skills: Matched 4 of 20 required skills (20% coverage). Key matches: JavaScript, Git, Python, Flask.",
+        "Skill Gaps: Missing core requirements: Amazon Web Services, Google Cloud Platform, CI/CD, FastAPI.",
+        "Experience: Below target tenure (3.6 yrs evaluated vs 4.0 yrs required).",
+        "Semantic Alignment: 58.1% calibrated alignment based on direct resume bullet citations."
+      ],
+      "requirement_citations": [
+        {
+          "requirement": "Experience Required: 4+ years of relevant backend software engineering experience",
+          "best_matching_chunk": "Maya Lin\nmaya.lin@bootcampalumni.org | (555) 012-3456 | Associate Web Developer\nPROFESSIONAL SUMMARY\nRecent full-stack coding bootcamp graduate eager to contribute foundational Python and web development skills to an innovative engineering team.\nTECHNICAL SKILLS\nPython, Flask, JavaScript, HTML5, CSS3, Git, SQLite\nWORK EXPERIENCE\nSoftware Engineering Intern - StartUp Catalyst (May 2023 - Present)\nBuilt prototype web apps using Python Flask and SQLite backends.\nDesigned responsive UI elements using HTML5, CSS3, and JavaScript.\nParticipated in weekly Git code reviews and sprint planning meetings.\nEDUCATION\nCoding Bootcamp Certificate in Full-Stack Web Development",
+          "similarity": 0.7,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "We are seeking an experienced Senior Backend Engineer to architect, build, and scale our high-throughput distributed microservices. You will lead API design, optimize database queries, implement asynchronous worker pipelines, and maintain CI/CD and cloud deployment infrastructure.",
+          "best_matching_chunk": "Software Engineering Intern - StartUp Catalyst (May 2023 - Present)\nBuilt prototype web apps using Python Flask and SQLite backends.\nDesigned responsive UI elements using HTML5, CSS3, and JavaScript.\nParticipated in weekly Git code reviews and sprint planning meetings.",
+          "similarity": 0.628,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "4+ years of professional backend software development experience.",
+          "best_matching_chunk": "Maya Lin\nmaya.lin@bootcampalumni.org | (555) 012-3456 | Associate Web Developer\nPROFESSIONAL SUMMARY\nRecent full-stack coding bootcamp graduate eager to contribute foundational Python and web development skills to an innovative engineering team.\nTECHNICAL SKILLS\nPython, Flask, JavaScript, HTML5, CSS3, Git, SQLite\nWORK EXPERIENCE\nSoftware Engineering Intern - StartUp Catalyst (May 2023 - Present)\nBuilt prototype web apps using Python Flask and SQLite backends.\nDesigned responsive UI elements using HTML5, CSS3, and JavaScript.\nParticipated in weekly Git code reviews and sprint planning meetings.\nEDUCATION\nCoding Bootcamp Certificate in Full-Stack Web Development",
+          "similarity": 0.655,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "Strong proficiency in Python 3 and modern async frameworks (FastAPI or Flask).",
+          "best_matching_chunk": "Software Engineering Intern - StartUp Catalyst (May 2023 - Present)\nBuilt prototype web apps using Python Flask and SQLite backends.\nDesigned responsive UI elements using HTML5, CSS3, and JavaScript.\nParticipated in weekly Git code reviews and sprint planning meetings.",
+          "similarity": 0.687,
+          "is_satisfied": true
+        }
+      ],
+      "rank": 10
+    },
+    {
+      "filename": "Daniel_Martinez_Resume.docx",
+      "candidate_name": "Daniel Martinez",
+      "email": "daniel.martinez@analyticsedge.com",
+      "phone": "(555) 234-8901",
+      "relevant_experience": 5.4,
+      "total_experience": 5.4,
+      "overall_score": 47.3,
+      "breakdown": {
+        "skills_score": 5.0,
+        "experience_score": 100.0,
+        "semantic_score": 51.2,
+        "education_score": 75.0,
+        "weights": {
+          "skills": 0.4,
+          "experience": 0.25,
+          "semantic": 0.25,
+          "education": 0.1
+        }
+      },
+      "matched_skills": [
+        "Python"
+      ],
+      "missing_skills": [
+        "JavaScript",
+        "Amazon Web Services",
+        "Google Cloud Platform",
+        "CI/CD",
+        "Git",
+        "FastAPI",
+        "Flask",
+        "React",
+        "Next.js",
+        "Docker",
+        "Kubernetes",
+        "PostgreSQL",
+        "Redis",
+        "Kafka",
+        "RabbitMQ",
+        "REST API",
+        "Microservices",
+        "Unit Testing",
+        "Selenium"
+      ],
+      "all_skills": [
+        "SQL",
+        "Python",
+        "Agile",
+        "Pandas"
+      ],
+      "education_level": 2,
+      "rationale": [
+        "Low match (47.3%); background does not align with primary job requirements.",
+        "Skills: Matched 1 of 20 required skills (5% coverage). Key matches: Python.",
+        "Skill Gaps: Missing core requirements: JavaScript, Amazon Web Services, Google Cloud Platform, CI/CD.",
+        "Experience: Exceeds target tenure (5.4 yrs evaluated vs 4.0 yrs required).",
+        "Semantic Alignment: 51.2% calibrated alignment based on direct resume bullet citations."
+      ],
+      "requirement_citations": [
+        {
+          "requirement": "Experience Required: 4+ years of relevant backend software engineering experience",
+          "best_matching_chunk": "Daniel Martinez\ndaniel.martinez@analyticsedge.com | (555) 234-8901 | Business Intelligence Analyst\nPROFESSIONAL SUMMARY\nBusiness Intelligence Analyst with 3.5 years translating complex enterprise data into executive dashboards, financial forecasts, and KPI metrics.\nTECHNICAL SKILLS\nSQL, Excel, Tableau, PowerBI, Pandas, Agile\nWORK EXPERIENCE\nBI Analyst - Global Logistics Corp (Jul 2021 - Present)\nDesigned executive financial dashboards in Tableau and PowerBI.\nWrote SQL queries to extract data from corporate data warehouses.\nUtilized Excel macros and Python Pandas for monthly financial reconciliations.\nEDUCATION\nBachelor of Business Administration in Finance",
+          "similarity": 0.598,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "We are seeking an experienced Senior Backend Engineer to architect, build, and scale our high-throughput distributed microservices. You will lead API design, optimize database queries, implement asynchronous worker pipelines, and maintain CI/CD and cloud deployment infrastructure.",
+          "best_matching_chunk": "BI Analyst - Global Logistics Corp (Jul 2021 - Present)\nDesigned executive financial dashboards in Tableau and PowerBI.\nWrote SQL queries to extract data from corporate data warehouses.\nUtilized Excel macros and Python Pandas for monthly financial reconciliations.",
+          "similarity": 0.589,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "4+ years of professional backend software development experience.",
+          "best_matching_chunk": "Daniel Martinez\ndaniel.martinez@analyticsedge.com | (555) 234-8901 | Business Intelligence Analyst\nPROFESSIONAL SUMMARY\nBusiness Intelligence Analyst with 3.5 years translating complex enterprise data into executive dashboards, financial forecasts, and KPI metrics.\nTECHNICAL SKILLS\nSQL, Excel, Tableau, PowerBI, Pandas, Agile\nWORK EXPERIENCE\nBI Analyst - Global Logistics Corp (Jul 2021 - Present)\nDesigned executive financial dashboards in Tableau and PowerBI.\nWrote SQL queries to extract data from corporate data warehouses.\nUtilized Excel macros and Python Pandas for monthly financial reconciliations.\nEDUCATION\nBachelor of Business Administration in Finance",
+          "similarity": 0.59,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "Strong proficiency in Python 3 and modern async frameworks (FastAPI or Flask).",
+          "best_matching_chunk": "BI Analyst - Global Logistics Corp (Jul 2021 - Present)\nDesigned executive financial dashboards in Tableau and PowerBI.\nWrote SQL queries to extract data from corporate data warehouses.\nUtilized Excel macros and Python Pandas for monthly financial reconciliations.",
+          "similarity": 0.581,
+          "is_satisfied": true
+        }
+      ],
+      "rank": 11
+    },
+    {
+      "filename": "Chloe_Dubois_Resume.pdf",
+      "candidate_name": "Chloe Dubois",
+      "email": "chloe.dubois@creativepixel.com",
+      "phone": "(555) 345-9012",
+      "relevant_experience": 0.0,
+      "total_experience": 6.9,
+      "overall_score": 22.4,
+      "breakdown": {
+        "skills_score": 0.0,
+        "experience_score": 0.0,
+        "semantic_score": 59.7,
+        "education_score": 75.0,
+        "weights": {
+          "skills": 0.4,
+          "experience": 0.25,
+          "semantic": 0.25,
+          "education": 0.1
+        }
+      },
+      "matched_skills": [],
+      "missing_skills": [
+        "JavaScript",
+        "Amazon Web Services",
+        "Google Cloud Platform",
+        "CI/CD",
+        "Git",
+        "Python",
+        "FastAPI",
+        "Flask",
+        "React",
+        "Next.js",
+        "Docker",
+        "Kubernetes",
+        "PostgreSQL",
+        "Redis",
+        "Kafka",
+        "RabbitMQ",
+        "REST API",
+        "Microservices",
+        "Unit Testing",
+        "Selenium"
+      ],
+      "all_skills": [
+        "CSS3"
+      ],
+      "education_level": 2,
+      "rationale": [
+        "Low match (22.4%); background does not align with primary job requirements.",
+        "Skills: Matched 0 of 20 required skills (0% coverage). Key matches: None.",
+        "Skill Gaps: Missing core requirements: JavaScript, Amazon Web Services, Google Cloud Platform, CI/CD.",
+        "Experience: Below target tenure (0.0 yrs evaluated vs 4.0 yrs required).",
+        "Semantic Alignment: 59.7% calibrated alignment based on direct resume bullet citations."
+      ],
+      "requirement_citations": [
+        {
+          "requirement": "Experience Required: 4+ years of relevant backend software engineering experience",
+          "best_matching_chunk": "Conducted user research studies and usability testing for mobile apps.",
+          "similarity": 0.687,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "We are seeking an experienced Senior Backend Engineer to architect, build, and scale our high-throughput distributed microservices. You will lead API design, optimize database queries, implement asynchronous worker pipelines, and maintain CI/CD and cloud deployment infrastructure.",
+          "best_matching_chunk": "Lead UI/UX Designer - Aesthetic Studio Jan 2020 - Present",
+          "similarity": 0.618,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "4+ years of professional backend software development experience.",
+          "best_matching_chunk": "Lead UI/UX Designer - Aesthetic Studio Jan 2020 - Present",
+          "similarity": 0.657,
+          "is_satisfied": true
+        },
+        {
+          "requirement": "Strong proficiency in Python 3 and modern async frameworks (FastAPI or Flask).",
+          "best_matching_chunk": "Created high-fidelity wireframes, mockups, and interactive prototypes in Figma.",
+          "similarity": 0.643,
+          "is_satisfied": true
+        }
+      ],
+      "rank": 12
+    }
+  ]
+}
