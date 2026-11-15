@@ -66,6 +66,34 @@ def extract_job_description(payload: JDExtractRequest):
     return profile
 
 
+@app.post("/api/v1/resumes/load-samples")
+def load_sample_resumes(payload: JDExtractRequest):
+    """
+    One-click benchmark loader: runs evaluation against the 12 bundled synthetic test resumes.
+    """
+    if not payload.jd_text.strip():
+        raise HTTPException(status_code=400, detail="Job description text cannot be empty.")
+
+    test_dir = os.path.join(os.path.dirname(__file__), "data", "test_resumes")
+    if not os.path.exists(test_dir):
+        raise HTTPException(status_code=404, detail="Sample resumes directory not found.")
+
+    sample_files = [
+        os.path.join(test_dir, f)
+        for f in os.listdir(test_dir)
+        if f.endswith(('.pdf', '.docx'))
+    ]
+
+    rankings = pipeline.rank_resumes(sample_files, payload.jd_text)
+    LATEST_SESSION["jd_profile"] = pipeline.parse_job_description(payload.jd_text)
+    LATEST_SESSION["rankings"] = rankings
+
+    return {
+        "total_processed": len(rankings),
+        "rankings": rankings
+    }
+
+
 @app.post("/api/v1/resumes/batch-match")
 async def batch_match_resumes(
     jd_text: str = Form(...),

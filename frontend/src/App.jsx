@@ -77,6 +77,39 @@ export default function App() {
     }
   };
 
+  const removeFile = (indexToRemove) => {
+    setSelectedFiles((prev) => prev.filter((_, idx) => idx !== indexToRemove));
+  };
+
+  const handleLoadSamples = async () => {
+    if (!jdText.trim()) {
+      alert('Please enter a Job Description first.');
+      return;
+    }
+    setLoading(true);
+    try {
+      const res = await fetch(`${API_BASE}/api/v1/resumes/load-samples`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ jd_text: jdText })
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setRankings(data.rankings || []);
+        if (!jdProfile) {
+          handleExtractJD();
+        }
+      } else {
+        alert(data.detail || 'Failed to load samples.');
+      }
+    } catch (err) {
+      console.error('Failed to load sample resumes:', err);
+      alert('Failed to connect to backend server. Make sure FastAPI is running on http://localhost:8000.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
   // Batch Match and Rank (Module 2 & 3)
   const handleBatchMatch = async () => {
     if (!jdText.trim()) {
@@ -232,18 +265,30 @@ export default function App() {
 
         {/* Module 2: Batch Resume Upload */}
         <div className="card">
-          <div className="card-title">
-            <Upload size={18} color="#2563eb" />
-            Module 2: Batch Resume Upload (PDF / DOCX)
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
+            <div className="card-title" style={{ margin: 0 }}>
+              <Upload size={18} color="#2563eb" />
+              Module 2: Batch Resume Upload
+            </div>
+            <button
+              className="btn-secondary"
+              style={{ fontSize: '12px', padding: '4px 10px' }}
+              onClick={handleLoadSamples}
+              disabled={loading}
+              title="Loads the 12 bundled synthetic test resumes directly from backend"
+            >
+              <Sparkles size={14} color="#2563eb" /> Load 12 Benchmark Resumes
+            </button>
           </div>
+
           <div
             style={{
               border: '2px dashed #cbd5e1',
               borderRadius: '8px',
-              padding: '24px',
+              padding: '16px',
               textAlign: 'center',
               backgroundColor: '#f8fafc',
-              marginBottom: '14px'
+              marginBottom: '12px'
             }}
           >
             <input
@@ -255,25 +300,114 @@ export default function App() {
               onChange={handleFileChange}
             />
             <label htmlFor="file-upload" style={{ cursor: 'pointer' }}>
-              <FileText size={32} color="#94a3b8" style={{ margin: '0 auto 8px auto' }} />
-              <div style={{ fontWeight: '600', fontSize: '14px', color: '#334155' }}>
+              <FileText size={26} color="#94a3b8" style={{ margin: '0 auto 4px auto' }} />
+              <div style={{ fontWeight: '600', fontSize: '13px', color: '#334155' }}>
                 Click to select 10+ resumes or drag & drop
               </div>
-              <div style={{ fontSize: '12px', color: '#64748b', marginTop: '4px' }}>
-                Supported formats: PDF, DOCX (Batch upload supported)
+              <div style={{ fontSize: '11px', color: '#64748b', marginTop: '2px' }}>
+                Supports PDF & DOCX batch upload
               </div>
             </label>
           </div>
 
+          {/* Selected Resumes List Preview */}
+          {selectedFiles.length > 0 && (
+            <div style={{ marginBottom: '14px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
+                <span style={{ fontSize: '12px', fontWeight: '600', color: '#475569' }}>
+                  Selected Resumes ({selectedFiles.length}):
+                </span>
+                <button
+                  style={{ background: 'transparent', border: 'none', color: '#dc2626', fontSize: '11px', cursor: 'pointer', fontWeight: '500' }}
+                  onClick={() => setSelectedFiles([])}
+                >
+                  Clear all
+                </button>
+              </div>
+              <div
+                style={{
+                  maxHeight: '135px',
+                  overflowY: 'auto',
+                  border: '1px solid #e2e8f0',
+                  borderRadius: '6px',
+                  background: '#ffffff',
+                  padding: '6px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '4px'
+                }}
+              >
+                {selectedFiles.map((file, idx) => {
+                  const isPdf = file.name.toLowerCase().endsWith('.pdf');
+                  const sizeKb = (file.size / 1024).toFixed(1);
+                  return (
+                    <div
+                      key={idx}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'space-between',
+                        padding: '4px 8px',
+                        background: '#f8fafc',
+                        borderRadius: '4px',
+                        fontSize: '12px'
+                      }}
+                    >
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', minWidth: 0, flex: 1 }}>
+                        <span className={`badge ${isPdf ? 'badge-red' : 'badge-blue'}`} style={{ fontSize: '10px', padding: '1px 6px' }}>
+                          {isPdf ? 'PDF' : 'DOCX'}
+                        </span>
+                        <span
+                          style={{
+                            fontWeight: '500',
+                            color: '#1e293b',
+                            whiteSpace: 'nowrap',
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis'
+                          }}
+                          title={file.name}
+                        >
+                          {file.name}
+                        </span>
+                        <span style={{ color: '#94a3b8', fontSize: '11px', flexShrink: 0 }}>
+                          ({sizeKb} KB)
+                        </span>
+                      </div>
+                      <button
+                        onClick={() => removeFile(idx)}
+                        style={{
+                          background: 'transparent',
+                          border: 'none',
+                          color: '#94a3b8',
+                          cursor: 'pointer',
+                          padding: '2px',
+                          display: 'flex',
+                          alignItems: 'center'
+                        }}
+                        title="Remove file"
+                      >
+                        <X size={14} />
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span style={{ fontSize: '13px', color: '#475569' }}>
+            <span style={{ fontSize: '12px', color: '#64748b' }}>
               {selectedFiles.length > 0 ? (
-                <strong>{selectedFiles.length} file(s) selected</strong>
+                <span>Ready to process <strong>{selectedFiles.length} resume(s)</strong></span>
               ) : (
-                'No files chosen yet'
+                'Choose files or load samples'
               )}
             </span>
-            <button className="btn-primary" onClick={handleBatchMatch} disabled={loading || selectedFiles.length === 0}>
+            <button
+              className="btn-primary"
+              onClick={handleBatchMatch}
+              disabled={loading || selectedFiles.length === 0}
+            >
               {loading ? (
                 <>Processing {selectedFiles.length} Resumes...</>
               ) : (
