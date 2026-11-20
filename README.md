@@ -225,14 +225,14 @@ FINAL BENCHMARK EVALUATION SUMMARY
 ### 2. Backend Setup
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/resume-matcher.git
-cd resume-matcher
+git clone https://github.com/Krishna-Kilrofkansa/ai-resume-matcher.git
+cd ai-resume-matcher
 
 # Install backend dependencies
 python -m pip install -r backend/requirements.txt
 
 # Start the FastAPI backend server (runs on port 8000)
-python -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload
+python -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8000 --reload
 ```
 API documentation is available at `http://localhost:8000/docs`.
 
@@ -251,16 +251,21 @@ Open your browser at `http://localhost:5173`.
 
 ---
 
-## 7. Running Automated Unit Tests
+## 7. Running Automated Unit Tests & Benchmarks
 
 Execute the automated test suite to verify scoring consistency and API endpoints:
 ```bash
 python -m pytest backend/tests/ -v -o "pythonpath=backend"
 ```
 
-To run the full benchmark evaluation against all 12 synthetic resumes:
+To run the full benchmark evaluation against all 19 multi-page real-world resumes:
 ```bash
 python scripts/evaluate_benchmark.py
+```
+
+To regenerate the end-to-end automated demo video:
+```bash
+python scripts/record_demo.py
 ```
 
 ---
@@ -268,7 +273,10 @@ python scripts/evaluate_benchmark.py
 ## 8. Repository Structure
 
 ```text
-resume-matcher/
+ai-resume-matcher/
+├── demo/
+│   ├── ai_resume_matcher_demo.mp4   # 34s full HD recorded walkthrough
+│   └── demo_preview.gif             # Lightweight animated demo preview
 ├── backend/
 │   ├── app/
 │   │   ├── main.py                  # FastAPI server & REST endpoints
@@ -286,7 +294,7 @@ resume-matcher/
 │   │       ├── skills_taxonomy.json # 260+ canonical skills & alias map
 │   │       ├── sample_jd.txt        # Senior Python/FastAPI test JD
 │   │       ├── ground_truth.json    # Human evaluation annotations
-│   │       ├── synthetic_generator.py # Generates 12 test PDF/DOCX resumes
+│   │       ├── online_resumes/      # 19 real-world 1-3 page PDF resumes
 │   │       └── test_resumes/        # 12 bundled PDF & DOCX test files
 │   ├── tests/
 │   │   ├── test_scoring_math.py     # Unit test: breakdown adds up to total
@@ -300,7 +308,9 @@ resume-matcher/
 │   ├── package.json
 │   └── vite.config.js
 ├── scripts/
-│   └── evaluate_benchmark.py        # Computes Spearman rho & F1 metrics
+│   ├── download_real_resumes.py     # Script to pull real multi-page resumes
+│   ├── evaluate_benchmark.py        # Computes Spearman rho & F1 metrics
+│   └── record_demo.py               # Automated headless demo video recorder
 ├── README.md                        # Documentation & Architecture
 └── LICENSE                          # MIT License
 ```
