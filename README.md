@@ -6,7 +6,21 @@ Built specifically to operate with high accuracy on **consumer-grade, CPU-only h
 
 ---
 
+## 🎥 Working Video Demonstration
+
+![AI Resume Matcher Demo Walkthrough](demo/demo_preview.gif)
+
+> 📹 **High-Definition Video File:** A complete 34-second end-to-end recording demonstrating all 5 modules (JD criteria extraction, batch loading 19 real resumes, live matching, dashboard filtering, score threshold adjustments, and candidate deep inspection drawer) is included at [`demo/ai_resume_matcher_demo.mp4`](demo/ai_resume_matcher_demo.mp4).
+>
+> To regenerate or re-record the automated demo at any time, run:
+> ```bash
+> python scripts/record_demo.py
+> ```
+
+---
+
 ## Table of Contents
+- [🎥 Working Video Demonstration](#-working-video-demonstration)
 - [1. System Architecture](#1-system-architecture)
 - [2. Modules & Functional Requirements](#2-modules--functional-requirements)
 - [3. The Matching Algorithm & Scoring Methodology](#3-the-matching-algorithm--scoring-methodology)
