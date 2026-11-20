@@ -34,9 +34,10 @@ Built specifically to operate with high accuracy on **consumer-grade, CPU-only h
   - [CPU & Memory Profiling](#cpu--memory-profiling)
 - [5. Technology Stack](#5-technology-stack)
 - [6. Installation & Quick Start](#6-installation--quick-start)
-- [7. Running Automated Unit Tests](#7-running-automated-unit-tests)
+- [7. Running Automated Unit Tests & Benchmarks](#7-running-automated-unit-tests--benchmarks)
 - [8. Repository Structure](#8-repository-structure)
-- [9. License](#9-license)
+- [9. Assignment Duration & Engineering Breakdown](#9-assignment-duration--engineering-breakdown)
+- [10. License](#10-license)
 
 ---
 
@@ -317,6 +318,19 @@ ai-resume-matcher/
 
 ---
 
-## 9. License
+## 9. Assignment Duration & Engineering Breakdown
+
+The project was architected, implemented, evaluated, and documented over a **3-day sprint (~18 focused engineering hours)**:
+
+| Phase | Duration | Scope & Key Accomplishments |
+|---|---|---|
+| **Phase 1: Architecture & Algorithm Design** | ~4 hours | Mathematical formulation of the calibrated 4-pillar scoring engine; design of the chunk-level requirement MaxSim late interaction model (`bge-small-en-v1.5`); design of the non-overlapping interval-merging experience algorithm. |
+| **Phase 2: Backend & NLP Engine** | ~6 hours | Implementation of dual document parsers (`pypdf` layout-aware text & `python-docx` table reader); curation of the 260+ canonical skills taxonomy with alias mapping and word-boundary guards; empirical calibration constants ($C_{min}=0.25, C_{max}=0.85$); FastAPI REST endpoints with Pydantic V2 validation; automated unit test suite. |
+| **Phase 3: Frontend & Recruiter Dashboard** | ~5 hours | Modern React 18 + Vite UI with Lucide React; Module 1 JD extractor with expandable criteria tags; Module 2 batch resume upload dropzone with per-file removal; Module 4 interactive candidate ranking table with live slider/search filtering and CSV export; Module 5 candidate deep inspection drawer with 4-pillar score breakdown, skill gap matrix, and text citations. |
+| **Phase 4: Real-Resume Benchmarking & Video Demo** | ~3 hours | Compilation of 19 real-world 1–3 page resumes from open Kaggle/LiveCareer datasets; empirical benchmark evaluation yielding Spearman rank correlation $\rho = 0.951$, precision $74.8\%$, and recall $81.5\%$; creation of automated headless video recorder (`scripts/record_demo.py`) generating HD MP4 (`demo/ai_resume_matcher_demo.mp4`) and animated GIF (`demo/demo_preview.gif`). |
+
+---
+
+## 10. License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
